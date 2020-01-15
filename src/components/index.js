@@ -1,3 +1,4 @@
 import Nav from "./Nav"
 import Animation from './Animation';
-export {Nav,Animation}
+import About from './About';
+export {Nav,Animation,About}
