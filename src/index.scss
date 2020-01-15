@@ -3,14 +3,15 @@
 .App{
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: minmax(100px,auto);
+    grid-template-rows: minmax(90px,auto);
     grid-gap: 4vw;
 }
 
 .Nav{
     color: #ffffff;
     grid-column: 1/9;
-    background-color: yellowgreen;
+    background: greenyellow;
+
     display: grid;
     grid-template-columns: repeat(8,1fr);
 
@@ -21,6 +22,7 @@
 
     }
     .links{
+
         grid-column:5/9;
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -141,14 +143,14 @@
 
 /*Animation*/
 .Animation{
-    background-color: yellowgreen;
+    background: greenyellow;
     grid-template-columns: repeat(8,1fr);
     display: grid;
     grid-column: 1/9;
     justify-items: center !important;
     img{
         grid-column: 2/8 !important;
-        height: 40vw;
+        height: 35vw;
 
     }
     #next{
@@ -165,4 +167,94 @@
         grid-row:1/2 !important;
     }
     
+}
+/*About*/
+
+.About{
+    grid-template-columns: repeat(5,1fr);
+    display: grid;
+    grid-column: 1/9;
+    justify-items: center !important;
+    grid-gap: 20px;
+    background: greenyellow;
+
+    h2{
+        margin-top: 5vw !important;
+        grid-column: 2/5 !important;
+        grid-row: 2/3;
+        font-family: 'Dancing Script', cursive;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw !important;
+        color: #ffffff;
+        font-weight: 100;
+    }
+    p{
+        grid-row: 3/5;
+        grid-column: 2/5;
+        font-family: 'PT Sans Narrow', sans-serif;
+        text-align: center;
+        line-height: 3vw ;
+        color: #0000004d;
+        font-size: 2.3vw !important ;
+        letter-spacing: 0.1vw;
+    }
+    
+
+
+    
+
+}
+@media screen  and (max-width: 100px) {
+    .About{
+        p{
+            display: none;
+        }
+        h2{
+            font-size: 1vw;
+        }
+        
+    }
+
+}
+/*Restaurant*/
+.Restaurant{
+    display: grid;
+    grid-column: 1/9;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10vw;
+
+    img{
+        grid-column: 1/3 !important;
+        height: 35vw !important;
+        grid-row: 1/2 !important;
+    }
+    h3{
+        // color: indianred;
+        margin-top: 5vw !important;
+        color: rgb(197, 205, 116);
+        grid-column: 3/5;
+        margin: 0 auto;
+        grid-row: 1/2;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 5vw;
+        letter-spacing: 0.3vw;
+        font-weight: 500;
+
+       
+    }
+    p{  align-items: center;
+        text-align: center;
+        font-size: 1.5vw !important;
+        grid-row: 1;
+        grid-column: 3/5 ;
+        margin: auto auto;
+        line-height: 3.2vw !important;
+        font-family: 'Cardo', serif;
+        letter-spacing: 0.1vw;
+        color: #9c6c026b !important;
+        font-weight: 700 !important;
+    }
+   
 }

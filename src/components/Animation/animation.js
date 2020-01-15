@@ -31,7 +31,7 @@ export default class Animation extends Component{
             this.next()
 
           
-          },4000)
+          },1000)
     }
     
     render(){
