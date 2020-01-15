@@ -1,0 +1,141 @@
+
+/*Navbar*/
+
+.App{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: minmax(100px,auto);
+}
+
+.Nav{
+    color: #0000004d;
+    grid-column: 1/9;
+    background-color: rgba(223, 222, 223, 0.4);
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+    h1{
+        font-size: 5.2vw;
+        grid-column: 1;
+        margin: auto 20px;
+         font-family: 'PT Sans Narrow', sans-serif;
+
+    }
+    .links{
+        grid-column:5/9;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        a{   font-family: 'Indie Flower', cursive;
+            text-decoration: none;
+            color: #0000004d;
+            margin: auto auto;
+            font-size: 2.3vw;   
+
+        }
+    }
+    @media screen  and (max-width: 520px) {
+            .App{       
+                display: grid;
+           
+            .Nav{
+                display: grid;
+                width: auto;
+                h1{
+                    grid-column: 1;
+                    margin:  auto 10px;
+               }
+                display: grid;
+                .links{
+                    background-color: #5120bb4d !important;
+                    grid-column-start: 2;
+                    display: grid;
+                    a{
+                        margin: auto auto;
+                    }
+            }
+          
+            }
+        }
+        }
+        
+}
+
+@media screen  and (max-width: 700px) {
+    .App{       
+        display: grid;  
+    .Nav{
+        min-width: 300px;
+        display: grid;
+        h1{
+            grid-column: 1;
+            margin:  auto 10px;
+       }
+        display: grid;
+        .links{
+
+
+            grid-column-start: 3;
+            display: grid;       
+
+    }
+    }
+}
+}
+
+ @media screen  and (max-width: 700px) {
+     .Nav{
+            a{
+       font-size: 2.6vw!important;
+     }
+ }
+
+}
+@media screen  and (max-width: 420px) {
+    .Nav{
+
+
+           a{
+      font-size: 11px!important;
+
+    }
+}
+
+}
+@media screen  and (max-width: 380px) {
+    .Nav{
+
+
+           a{
+      font-size: 3vw!important;
+
+    }
+}
+
+}
+@media screen  and (max-width: 320px) {
+    .Nav{
+
+
+           a{
+      font-size: 10px !important;
+
+    }
+    h1{
+        font-size: 7vw !important;
+  
+      }
+}
+
+}
+@media screen  and (max-width: 200px) {
+    .Nav{
+
+
+           a{
+      font-size: 5vw !important;
+
+    }
+}
+
+}
