@@ -12,21 +12,13 @@ export default class Restaurant extends Component{
      changeOpacity(){
 
         setTimeout(()=>{
-            
-
-
                     if(this.state.opacity<=0.90){
-                       
 
-                        this.setState({
+                   this.setState({
                 
                             opacity:this.state.opacity+0.10})
                     }
                    
-                    
-                  
-
-          
           },200)    
         
         }

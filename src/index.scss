@@ -258,3 +258,68 @@
     }
    
 }
+/*Newsletter*/
+.Newsletter{
+    display: grid;
+    grid-column: 1/9;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3vw;
+    background-color: rgba(115, 255, 0, 0.5);
+    background-image: url("./salad4.jpg") ;
+    opacity: 0.6;
+    background-size: cover;
+    color: white;    
+
+    h1{ 
+        grid-column: 2/4;
+        grid-row: 1/2;
+        margin: 6vw auto;
+        font-size: 4vw !important;
+        text-transform: uppercase;
+    }
+    p{ margin:  0 auto;
+        font-size: 4vw !important;
+        letter-spacing: 0.5vw;
+        grid-column: 2/4;
+        margin: 3vw auto;
+        text-align: center;
+
+
+    }
+    input{
+        border: none;
+        grid-row: 3;
+        grid-column: 2/4;
+        box-shadow: 20px 20px 50px 10px wheat inset;
+        height: 1.6vw;
+        width: 50%;
+        margin: auto auto;
+
+    }
+    ::placeholder{
+        color: #039603c7;
+
+    }
+    #email{
+        grid-row: 4;
+        grid-column: 2/4;
+
+    }
+    button{
+        grid-column: 2/4;
+        grid-row: 5;
+        margin-bottom: 5vw;
+        box-shadow: 20px 20px 50px 10px wheat inset;
+        color: #039603c7;
+        width:70%;
+        height: 3vw;
+        margin: auto auto;
+        margin-bottom: 5vw;
+
+
+    }
+
+}
+
+
+
