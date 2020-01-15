@@ -1,16 +1,16 @@
-
 /*Navbar*/
 
 .App{
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: minmax(100px,auto);
+    grid-gap: 4vw;
 }
 
 .Nav{
-    color: #0000004d;
+    color: #ffffff;
     grid-column: 1/9;
-    background-color: rgba(223, 222, 223, 0.4);
+    background-color: yellowgreen;
     display: grid;
     grid-template-columns: repeat(8,1fr);
 
@@ -28,7 +28,7 @@
         align-items: center;
         a{   font-family: 'Indie Flower', cursive;
             text-decoration: none;
-            color: #0000004d;
+            color: #ffffff;
             margin: auto auto;
             font-size: 2.3vw;   
 
@@ -138,4 +138,33 @@
     }
 }
 
+}
+
+
+/*Animation*/
+.Animation{
+    background-color: yellowgreen;
+    grid-template-columns: repeat(8,1fr);
+    display: grid;
+    grid-column: 1/9;
+    justify-items: center !important;
+    img{
+        grid-column: 2/8 !important;
+        height: 40vw;
+
+    }
+    #next{
+        grid-column: 8/9 !important;
+        height: 5vw;
+        margin: auto;
+        
+    }
+    #previous{
+        margin: auto ;
+        grid-column: 1/2 !important;
+        height: 5vw;
+        transform: rotate(180deg);
+        grid-row:1/2 !important;
+    }
+    
 }
