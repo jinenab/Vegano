@@ -10,7 +10,7 @@ export default class Newsletter extends Component{
                 <p>Get news about our sevices and discounts now.</p>
                 <input placeholder="Name"></input>
                 <input id="email" placeholder="Email"></input>
-                <button>Send Message</button>
+                <button>Send</button>
 
             </div>
         )
